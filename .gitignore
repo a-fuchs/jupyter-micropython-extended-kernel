@@ -1,0 +1,52 @@
+# Python-generated files
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__
+
+# Compiled Python files
+*.py[cod]
+*$py.class
+
+build/
+#dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Jupyter Notebook
+
+# Checkpoint files (the simple backups)
+.ipynb_checkpoints
+
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+
+# Compiled C++ files
+*.out
+
+# Html -> Pdf log
+geckodriver.log
+
+# Local folder
+archiv
+
+# Other
+*.aux
+*.log
+*.synctex.gz
+
