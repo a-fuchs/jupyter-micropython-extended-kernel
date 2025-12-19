@@ -3,7 +3,7 @@
 #import importlib.metadata
 #__version__ = importlib.metadata.version("jupyter_micropython_extended_kernel")
 
-__version__="2025.1.0"
+__version__="2025.1.1"
 
 #def main() -> None:
 #    print("Hello from jupyter-micropython-extended-kernel!")

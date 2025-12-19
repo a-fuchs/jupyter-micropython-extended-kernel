@@ -1,4 +1,4 @@
-[<img src="./assets/images/Logo.png" width="64" align="center">](https://github.com/a-fuchs/jupyter-micropython-extended-kernel) &emsp;  **Jupyter MicroPython extended Kernel**
+[<img src="https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/assets/images/Logo.png?raw=true" width="64" align="center" title="Logo">](https://github.com/a-fuchs/jupyter-micropython-extended-kernel) &emsp;  **Jupyter MicroPython extended Kernel**
 
 ---
 
@@ -20,7 +20,7 @@ It also allows
 With the cell magic `%%iPython` you can run normal Python in MicroPython-Jupyter Notebooks.  
 Within such a Python cell functions and variables on the controller can be accessed with the special functions `micropython_eval`, `micropython_value` and `micropython_run`, meaning, for example, that data captured by the controller can be displayed directly with matplotlib.
 
-For details see [Example](#idExamples) further down, the [KernelTest.ipynb](./KernelTest.ipynb) Notebook and the [example Notebooks](./notebooks/Index.ipynb).
+For details see [Example](#idExamples) further down, the [KernelTest.ipynb](https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/KernelTest.ipynb) Notebook and the [example Notebooks](https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/notebooks/Index.ipynb).
 
 ---
 ## Background
@@ -70,7 +70,11 @@ in most cases, you will need the [CP210x Universal Windows Driver](https://www.s
 from the [Silicon Lab download site](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads).<br/>
  Extract this file and, on standard 64-bit Windows systems (almost all of them these days), run the file `CP210xVCPInstaller_x64.exe`.
 
-   
+#### Install dependencies:
+```
+pip install --upgrade unsync, bleak, pyserial, websocket-client
+```
+    
 #### Install the kernel:
 ```
 pip install jupyter-micropython-extended-kernel
@@ -81,7 +85,7 @@ notebooks:
 python -m jupyter_micropython_extended_kernel.install
 ```
 
-See also [Installing the kernel](./KernelInstall.ipynb) if in a running JupyterLab environment.
+See also [Installing the kernel](https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/KernelTest.ipynb) if in a running JupyterLab environment.
 
 
 ---
@@ -128,7 +132,7 @@ Hello world!
 ```
 as output.
 
-For more **examples** please go to the [KernelTest.ipynb](./KernelTest.ipynb) notebook.
+For more **examples** please go to the [KernelTest.ipynb](https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/KernelTest.ipynb) notebook.
 
 
 
@@ -176,13 +180,13 @@ for i in range(100):
 ```
 Output:
 
-[<img src="./assets/images/RandomValuesPlot.png" title="Dynamically updated random values plot" width="500"/>](./assets/images/RandomValuesPlot.png)
+[<img src="https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/assets/images/RandomValuesPlot.png?raw=true" title="Dynamically updated random values plot" width="500"/>](./assets/images/RandomValuesPlot.png)
 
 ---
 
 ## Further notes
 * Normally, you have to run `%serialconnect` every time you switch to a different notebook. Sometimes, disconnecting the device from the USB cable, reconnecting it, and then running `%serialconnect` helps.
-* Endless loops can be stopped with "Esc ii", "Ctrl C" (does not work in some cases) or hitting the stop button at the top of the Notebook<br/> [<img src="./assets/images/StopButton.png" width="220" align="center" title="Stop button"/>](./assets/images/StopButton.png)
+* Endless loops can be stopped with "Esc ii", "Ctrl C" (does not work in some cases) or hitting the stop button at the top of the Notebook<br/> [<img src="https://github.com/a-fuchs/jupyter-micropython-extended-kernel/blob/main/assets/images/StopButton.png?raw=true" width="220" align="center" title="Stop button"/>](./assets/images/StopButton.png)
   Also `Kernel` → `Interrupt` in the menu may help.
 * To find out where your kernelspecs are stored, you can open a terminal with `File`→`New`→`Terminal` an then execute there `jupyter kernelspec list`.
 * Restarting the kernel does not actually reboot the device!  
