@@ -72,7 +72,7 @@ from the [Silicon Lab download site](https://www.silabs.com/software-and-tools/u
 
 #### Install dependencies:
 ```
-pip install --upgrade unsync, bleak, pyserial, websocket-client
+pip install --upgrade unsync bleak pyserial websocket-client
 ```
     
 #### Install the kernel:
